@@ -3,7 +3,7 @@ name: Preprocess Dataset
 on:
   push:
     paths:
-      - 'namadataset_raw/**'
+      - 'ecommerce_shipping_data/**'
       - 'preprocessing/automate_Nama-siswa.py'
   workflow_dispatch:
 
