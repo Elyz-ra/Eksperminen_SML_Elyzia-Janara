@@ -58,6 +58,7 @@ def load_and_preprocess(csv_path, output_path=None):
 
 if __name__ == "__main__":
     # Contoh penggunaan
-    input_csv = "../ecommerce_shipping_data/ecommerce_shipping_data.csv"
+    repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    input_csv = os.path.join(repo_root, 'ecommerce_shipping_data', 'ecommerce_shipping_data.csv')
     output_dir = "ecommerce_shipping_data_preprocessed"
     load_and_preprocess(input_csv, output_dir)
